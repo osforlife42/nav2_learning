@@ -25,4 +25,6 @@ USER ros
 ARG WORKSPACE="/home/ros/dev_ws/"
 RUN mkdir -p ${WORKSPACE}
 
+COPY setup_docker_env.sh /tmp/
+RUN /tmp/setup_docker_env.sh
 RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> /home/ros/.bashrc
