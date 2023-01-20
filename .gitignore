@@ -3,4 +3,3 @@ install/*
 log/*
 site/*
 docker_build/*
-src/dorothy_robot/*
